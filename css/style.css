@@ -1,0 +1,663 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Raleway sans-serif;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+body{
+    position: relative;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* =================== nav =============== */
+nav{
+  width: 100%;
+}
+nav #header{
+    background-color: white;
+    overflow: hidden;
+    display:  flex;
+    justify-content: space-between;
+    width: 90%;
+    font-size: 20px;
+    padding: 10px 0;
+    margin: auto;
+}
+nav h1{
+    margin: 20px 0;
+    padding: 10px 0px;
+    color :#5F687B;
+    font-size: 30px;
+    font-weight:700;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 0px 10px 20px;
+    margin: 20px 0px 20px 10px;
+}
+nav ul a{
+    text-decoration: none;
+    color :#71696c
+}
+nav ul a:hover{
+    color: #57bd69;
+}
+nav ul .start:hover a{
+  color : white
+}
+nav .start a, main .start{
+    padding: 10px 20px;
+    background-color: #57bd69;
+    color:  white;
+    border-radius: 30px;
+}
+/* ============================ hero ======================*/
+#top{
+  transition: 5s;
+}
+.top{
+  position: fixed;
+  background-color: #10BC69;
+  right: 30px;
+  bottom: 30px;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 50;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 60px;
+}
+main img{
+    animation: up-down 1s ease-in-out infinite alternate-reverse both;
+    max-width: 100%;
+    height: auto;
+}
+@keyframes up-down {
+    0% {
+      transform: translateY(10px);
+  }
+}
+main h1{
+    font-size: 40px;
+    color: #5F687B;
+    font-weight: 700;
+    margin: 20px;
+}
+main p{
+    font-size: 20px;
+    color: #5F687B;
+    margin: 20px;
+}
+main a{
+    text-decoration: none;
+    margin: 20px;
+    display: inline-block;
+}
+main a .start{
+    color: white;
+    margin: 30px 20px;
+}
+main .watch{
+    margin: 30px 20px 30px 0px;
+    padding: 10px 20px 10px 0px;
+    color: black;
+}
+main .watch:hover{
+    color: #57bd69;
+}
+main i{
+    color: #57bd69;
+    border: 1px solid #57bd69;
+    padding: 10px;
+    border-radius: 50%;
+}
+/* =========================== after header =======================*/
+.after-main{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+.after-main .card{
+  padding: 50px 30px;
+  margin: 50px 20px;
+  background-color: #f8f8f8;
+  color: #5F687B;
+  transition: ease-in-out 0.3s;
+}
+.after-main  .card:hover{
+  transform: translateY(-10px);
+}
+.card:hover h3{
+  color:#10BC69;
+}
+.after-main .card h3{
+  font-size:20px;
+  margin: 20px;
+  font-weight:700;
+}
+.after-main .card p{
+  margin: 20px;
+  line-height: 1.8;
+}
+.after-main .card i{
+  color: #57bd69;
+  margin: 20px;
+  font-size: 40px;
+}
+/* ============================== about ===========================*/
+.about{
+  width: 90%;
+  margin: auto;
+  padding: 50px 30px;
+  text-align: center;
+  color: #5F687B;
+}
+.about h2{
+  width: 100%;
+  font-size:32px;
+  font-weight:700;
+  margin: 20px;
+  text-transform: uppercase;
+}
+.about p{
+  color: black;
+  font-size: 18px;
+}
+.about-content {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 20px; 
+    margin: 50px 0;
+}
+.about-img {
+    width: 50%;
+    display: flex;
+    justify-content: center; 
+}
+.about-img img {
+    max-width: 100%;
+    height: auto;
+}
+.about-text {
+    width: 50%;
+    text-align: left;
+}
+.about-text h2 {
+    font-size: 22px;
+    color:#5F687B;
+    margin: 20px 0px;
+    font-weight: 700;
+}
+.about-text p {
+    font-size: 16px;
+    color: black;
+    line-height: 1.7;
+}
+.about-text > p {
+  margin-bottom: 20px;
+}
+.about-pragraph {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.about-pragraph p{
+  margin-bottom: 10px;
+  margin: 0;
+  font-size: 16px;
+  color: black;
+  line-height: 1.7;
+}
+.about-item {
+  display: flex;
+  align-items:first baseline; 
+  gap: 10px; 
+  margin-bottom: 10px;
+}
+.about-item i {
+  color: #10BC69;
+  flex-shrink: 0;
+  width: 35px;
+  height: 35px;
+  padding-left: 11px;
+}
+/* ================================ number ========================= */
+.numbers {
+  display: flex;
+  width: 100%;
+  margin-top: 120px 
+}
+.numbers .card {
+  width: 25%;
+}
+.numbers .card .num {
+  color: #10BC69;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.numbers .card .num-title{
+  color: #5F687B;
+}
+/* ============================== Service =========================== */
+.service{
+  background-color: #f8f8f8;
+}
+.service-head{
+  width: 90%;
+  margin: auto;
+  padding: 50px 30px;
+  text-align: center;
+  color: #5F687B;
+}
+.service h2{
+  width: 100%;
+  font-size:32px;
+  font-weight:700;
+  margin: 25px;
+  text-transform: uppercase;
+}
+.service p{
+  color: black;
+  font-size: 18px;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 60px;
+}
+.cards .card{
+  width: 32%;
+  background-color: white;
+  height: 400px;
+  padding: 60px 20px;
+  text-align: center;
+  line-height: 1.7;
+  border: .5px solid #5f687b36;
+}
+.cards .card:hover .head{
+  color: #10BC69;
+}
+.cards .card:hover{
+  border-color: #10BC69;
+}
+.cards .card i{
+  font-size: 40px;
+  color: white;
+  padding: 15px;
+  background-color: #10BC69;
+  border-radius:10px ;
+  margin-bottom: 15px;
+}
+.cards .card .head{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #5F687B;
+}
+.cards .card .pragraph{
+  color: black;
+}
+/* ==================================== Action ==================================== */
+.action{
+  background-color: #57bd69;
+}
+.action .action-content{
+  padding: 60px 20px;
+  text-align: center;
+  line-height: 1.7;
+  color: white;
+  width: 65%;
+  margin: 0px auto;
+}
+.action .action-content h3{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.action .action-content p{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.action .action-content button{
+  background-color: #10BC69;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  border :1px solid white;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+/*======================================= Team ===============================  */
+.team{
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+.team h2{
+  width: 100%;
+  font-size:32px;
+  font-weight:700;
+  margin: 25px;
+  text-transform: uppercase;
+  color: #5F687B;
+}
+.team p{
+  color: black;
+  font-size: 18px;
+}
+.team-section{
+  width: 90%;
+  margin: 30px auto;
+  text-align: center;
+}
+.team-content{
+  width: 90%;
+  margin: 0px auto;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+.team-card{
+  width: 33%;
+  position: relative;
+  transition: 0.5s;
+}
+.team-card:hover{
+  transform: scale(1.1);
+}
+.team img{
+  width: 100%;
+}
+.team .name{
+  color: #5F687B;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+.team-card-title{
+  width: 90%;
+  margin: 0px auto;
+  padding: 10px;
+  position: absolute;
+  bottom: -45px;
+  right: 5%;
+  border: 1px solid #5f687b3d;
+  box-shadow: 0px 3px 3px #888888;
+  background-color: white;
+}
+.team-title{
+  display: flex;
+  justify-content: space-between;
+}
+.team-title p{
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.603);
+  margin-bottom: 10px;
+}
+.team-title .pages i{
+  margin-right: 5px;
+  color: rgba(0, 0, 0, 0.603);
+}
+.team-title .pages i:hover{
+  color: #10BC69;
+  cursor: pointer;
+}
+.line{
+  width: 50px;
+  color: rgba(0, 0, 0, 0.603);
+  margin-bottom: 10px;
+}
+/* ==================================== contact ====================================== */
+.contact-content{
+  width: 90%;
+}
+.contact-head{
+  text-align: center;
+  margin: 100px 0px;
+}
+.contact-head h2{
+  width: 100%;
+  font-size:32px;
+  font-weight:700;
+  margin: 25px 0px;
+  text-transform: uppercase;
+  color: #5F687B;
+}
+.contact-head p{
+  color: black;
+  font-size: 18px;
+}
+.contact-content{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0px auto;
+}
+.contact-content .contact-left{
+  width: 40%;
+  border: 1px solid #5f687b3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.contact-content .contact-right{
+  width: 60%;
+  border: 1px solid #5f687b3d;
+
+  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.item{
+  display: flex;
+  gap: 10px;
+  margin: 40px 20px;
+
+}
+.item:hover .left-item{
+  background-color: #10BC69;
+}
+.item:hover .left-item i{
+  color: white;
+}
+.item .left-item{
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #edf9f3;
+  color: #10BC69;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 1s;
+} 
+.item  .left-item  #loc{
+  margin-left: 4px;
+}
+.item .right-item .p1{
+  color: #5F687B;
+  margin: 5px;
+}
+.item .right-item .p2{
+  color: rgba(0, 0, 0, 0.603);
+}
+.map{
+  width: 90%;
+  margin: 0px auto 20px;
+}
+.map img{
+  width: 100%;
+}
+.contact-right{
+  padding: 20px 0 20px 20px;
+}
+.contact-right .name{
+  display: flex;
+}
+.contact-right .name .field{
+  width: 50%;
+}
+.contact-right {
+  padding-top: 30px;
+}
+.contact-right .name .field input{
+  width: 90%;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  margin-top: 10px;
+}
+.contact-right .sub, .message{
+  margin: 20px 0px 10px;
+  display: inline-block;
+}
+.contact-right #sub{
+  /* display: inline-block; */
+  width: 95%;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+}
+.mess{
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  margin-bottom: 20px;
+}
+.btn{
+  text-align: center;
+}
+form button{
+  width: 25%;
+  display: inline-block;
+  background-color: #10BC69;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border :1px solid white;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+button:hover{
+  background-color: #0a9d5b9c;
+}
+/* ===================================== news-letter ============================= */
+.news-letter{
+  margin: 50px 0px;
+  background-color: #f8f8f8;
+}
+#news{
+  width: 40%;
+  position: relative;
+}
+.news-letter h2{
+  color: #5F687B;
+}
+.news-letter #p-news{
+  color: rgba(0, 0, 0, 0.699);
+  font-size: 14px;
+  margin-top: 5px;
+}
+.news-letter input{
+  border-radius: 40px;
+  border: 1px solid #10BC69;
+  padding: 10px;
+  width: 100%;
+}
+.news-letter button{
+  position: absolute;
+  bottom: 59px;
+  right: 20px;
+}
+.news-letter button:hover{
+  background-color: #10bc69b6;
+}
+/* ======================================= footer ====================================== */
+.footer-content{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-content .footer-1 , .footer-4{
+  width: 30%;
+  margin-bottom: 30px;
+}
+.footer-content .footer-2 , .footer-3{
+  width: 20%;
+  margin-bottom: 30px;
+
+}
+.footer-content h4{
+  font-size: 24px;
+  color: #5F687B;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.footer-content a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.699);
+}
+.footer-content ul li{
+  list-style-type: none;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.footer-content p{
+  color: rgba(0, 0, 0, 0.699);
+}
+.footer-content .footer-3 a:hover, .footer-content .footer-2 a:hover {
+  color: #10BC69;
+}
+.footer-content .footer-3 i, .footer-content .footer-2 i{
+  color: #10BC69;
+  font-size: 12px;
+  font-weight: 200;
+  margin-right: 3px;
+}
+.footer-content .footer-1 p, .footer-content .footer-4 p{
+  margin-bottom: 10px;
+}
+.footer-content .footer-4 i{
+  display: inline-block;
+  font-size: 26px;
+  margin-right: 5px;
+  color: rgba(0, 0, 0, 0.603);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.603);
+  padding: 9px 0px 0px 9px;
+}
+.footer-content .footer-4  i:hover{
+  color: #10BC69;
+  border: 1px solid #10BC69;
+  cursor: pointer;
+}
+.end{
+  width: 90%;
+  margin: 20px auto;
+  color: rgba(0, 0, 0, 0.603);
+  text-align: center;
+}
+.end p {
+  margin: 20px 0px;
+}
+.end span{
+  font-weight: 600;
+  color: #10BC69;
+}
+.end .last{
+  font-size: 14px;
+}
